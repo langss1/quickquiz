@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Animeh</title>
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+</head>
+
+<body>
+    <header><b>SANDY LOPE KOTORI<b></header>
+    <hr/>
+    <br><div style="text-align: center;"><script language="JavaScript">
+        var text="Pov bilek, suatu hari terlihat pemuda-pemudi yg gemar menonton anjime, bilek teramat - amat slur pemuda tsb bernama sendy, terbilek bilek bantu sendy untuk menikahi istri anime";
+        var delay=0;
+        var currentChar=1;
+        var destination="[none]";
+        function type()
+        {
+        //if (document.all)
+        {
+        var dest=document.getElementById(destination);
+        if (dest)// && dest.innerHTML)
+        {
+        dest.innerHTML=text.substr(0, currentChar)+"<blink>_</blink>";
+        currentChar++;
+        if (currentChar>text.length)
+        {
+        currentChar=1;
+        setTimeout("type()", 10000);
+        }
+        else
+        {
+        setTimeout("type()", delay);
+        }
+        }
+        }
+        }
+        function startTyping(textParam, delayParam, destinationParam)
+        {
+        text=textParam;
+        delay=delayParam;
+        currentChar=1;
+        destination=destinationParam;
+        type();
+        }
+        </script>
+        <b><div id="textDestination" style="background-color: #FFFFFF; style=" font: 50px arial; color: #4bff14; margin: 0px;"></div></b>
+    
+        <script language="JavaScript">
+        javascript:startTyping(text, 70, "textDestination");
+        </script></div>
+    <center>
+        <img src="korooo.jpg" width="300px" height="300px"
+    </center>
+    <br>
+    <h2>Tentukan Pilihan Lu Dej</h2>
+    <a href="yes.html"><input type="button" value="gwehj bilek mw bantu" onclick="alert('mantab akhirnya gwehj nikah sama kotori can');" style="font size="100px"></a>--<a href="no.html"><input type="button" value=" Gwehj ga bilek ga mw bantu" onclick="alert('anjim anjim gwehj gagal nikah sama kotori gara-gara lu');" style="font size="100px"></a>
+</body>
+<style type="text/css">
+    header{
+        font-family: 'Segoe UI';
+        font-size: 50px;
+        text-align: center;
+    }
+    h2{
+        font-family: 'Segoe UI';
+        font-size: 25px;
+    </style>  
+</html>   
